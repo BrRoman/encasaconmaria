@@ -63,16 +63,9 @@
     "price": 3
   },
   {
-    "reference": "JAB-ALO",
+    "reference": "JAB-NAR",
     "category": "jabon",
-    "description": "Jabón con aloe vera. Dimensiones… Beneficios…",
-    "talla": "",
-    "price": 0
-  },
-  {
-    "reference": "JAB-ARR",
-    "category": "jabon",
-    "description": "Jabón con arroz. Dimensiones… Beneficios…",
+    "description": "Jabón con flores de naranja. Dimensiones… Beneficios…",
     "talla": "",
     "price": 0
   },
@@ -84,9 +77,16 @@
     "price": 0
   },
   {
-    "reference": "JAB-NAR",
+    "reference": "JAB-ALO",
     "category": "jabon",
-    "description": "Jabón con flores de naranja. Dimensiones… Beneficios…",
+    "description": "Jabón con aloe vera. Dimensiones… Beneficios…",
+    "talla": "",
+    "price": 0
+  },
+  {
+    "reference": "JAB-ARR",
+    "category": "jabon",
+    "description": "Jabón con arroz. Dimensiones… Beneficios…",
     "talla": "",
     "price": 0
   }
