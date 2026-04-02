@@ -1,0 +1,24 @@
+#products {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+
+  h2 {
+    background-color: lightgray;
+    color: black;
+    margin: 0;
+    padding: 5px;
+  }
+
+  #body {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  #products {
+    flex-direction: column;
+  }
+}

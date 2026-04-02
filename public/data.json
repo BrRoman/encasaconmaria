@@ -1,0 +1,93 @@
+[
+  {
+    "reference": "ROS-001",
+    "category": "rosario",
+    "description": "Granos 6 mm. Talla de la cruz: 4 cm. Cuerda blanca y granos marrón.",
+    "talla": "34 cm",
+    "price": 5
+  },
+  {
+    "reference": "ROS-002",
+    "category": "rosario",
+    "description": "Granos 6 mm. Talla de la cruz: 4 cm. Cuerda marrón y granos marrón y blancos.",
+    "talla": "38 cm",
+    "price": 5
+  },
+  {
+    "reference": "ROS-003",
+    "category": "rosario",
+    "description": "Granos 8 mm. Talla de la cruz: 4 cm. Cuerda marrón y granos marrón claro y marrón oscuro.",
+    "talla": "43 cm",
+    "price": 7
+  },
+  {
+    "reference": "ROS-004",
+    "category": "rosario",
+    "description": "Granos 8 mm. Talla de la cruz: 4 cm. Cuerda marrón y granos marrón y blancos.",
+    "talla": "43 cm",
+    "price": 7
+  },
+  {
+    "reference": "ROS-005",
+    "category": "rosario",
+    "description": "Granos 8 mm. Talla de la cruz: 4 cm. Cuerda marrón y granos marrón y blancos.",
+    "talla": "43 cm",
+    "price": 7
+  },
+  {
+    "reference": "ROS-006",
+    "category": "rosario",
+    "description": "Granos 8 mm. Talla de la cruz: 4 cm. Cuerda marrón y granos blancos.",
+    "talla": "43 cm",
+    "price": 7
+  },
+  {
+    "reference": "DEC-001",
+    "category": "decenario",
+    "description": "Granos 8 mm. Talla de la cruz: 2 cm. Cuerda blanca y granos marrón oscuro.",
+    "talla": "11 cm",
+    "price": 3
+  },
+  {
+    "reference": "DEC-002",
+    "category": "decenario",
+    "description": "Granos 6 mm. Talla de la cruz: 2 cm. Cuerda marrón elástica y granos blancos.",
+    "talla": "5 cm",
+    "price": 1.5
+  },
+  {
+    "reference": "DEC-003",
+    "category": "decenario",
+    "description": "Granos 8 mm. Cruz de cuerda ~2 cm. Cuerda marrón y granos blancos. La talla del decenario es ajustable para llevar al pugno.",
+    "talla": "16 cm",
+    "price": 3
+  },
+  {
+    "reference": "JAB-ALO",
+    "category": "jabon",
+    "description": "Jabón con aloe vera. Dimensiones… Beneficios…",
+    "talla": "",
+    "price": 0
+  },
+  {
+    "reference": "JAB-ARR",
+    "category": "jabon",
+    "description": "Jabón con arroz. Dimensiones… Beneficios…",
+    "talla": "",
+    "price": 0
+  },
+  {
+    "reference": "JAB-MAN",
+    "category": "jabon",
+    "description": "Jabón con manzanilla. Dimensiones… Beneficios…",
+    "talla": "",
+    "price": 0
+  },
+  {
+    "reference": "JAB-NAR",
+    "category": "jabon",
+    "description": "Jabón con flores de naranja. Dimensiones… Beneficios…",
+    "talla": "",
+    "price": 0
+  }
+]
