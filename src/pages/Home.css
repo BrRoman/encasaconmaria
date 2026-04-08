@@ -6,7 +6,24 @@
   place-items: center;
   flex-grow: 1;
 
+  h1 {
+    font-family: cursive;
+    font-size: 4em;
+  }
+
+  h1,
+  h2 {
+    color: white;
+  }
+
+  a {
+    width: 200px;
+    margin: 0 10px 0 10px;
+  }
+
   #categories {
+    margin: 50px 0 0 0;
+
     img {
       background-color: white;
     }

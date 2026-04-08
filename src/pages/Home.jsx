@@ -11,9 +11,11 @@ function Home() {
         <img src={mariaImg} alt="Virgen María" />
         <h1>En casa con María</h1>
         <h2>Tienda casera de productos naturales</h2>
-        <Link to="/encasaconmaria/about">¿Quienes somos?</Link>
-        <Link to="/encasaconmaria/products">Productos</Link>
-        <Link to="/encasaconmaria/contact">Contáctanos</Link>
+        <div className="d-flex">
+          <Link to="/encasaconmaria/about" className="btn btn-outline-primary btn-light">¿Quienes somos?</Link>
+          <Link to="/encasaconmaria/products" className="btn btn-outline-primary btn-light">Productos</Link>
+          <Link to="/encasaconmaria/contact" className="btn btn-outline-primary btn-light">Contáctanos</Link>
+        </div>
 
         <div id="categories">
           <h2>Nuestros rosarios</h2>
