@@ -65,29 +65,36 @@
   {
     "reference": "JAB-NAR",
     "category": "jabon",
-    "description": "Jabón con flores de naranja. Dimensiones… Beneficios…",
+    "description": "Jabón de glicerina con flores de naranja. Propiedades: Hidrata, tonifica, regenera la piel, motiva la producción de colágeno. Ideal para pieles delicadas y secas.",
     "talla": "",
-    "price": 0
+    "price": 3
   },
   {
     "reference": "JAB-MAN",
     "category": "jabon",
-    "description": "Jabón con manzanilla. Dimensiones… Beneficios…",
+    "description": "Jabón de glicerina con manzanilla. Beneficios: Hidrata, combate el acné, regenera la piel. Ideal para pieles sensibles.",
     "talla": "",
-    "price": 0
+    "price": 3
   },
   {
     "reference": "JAB-ALO",
     "category": "jabon",
-    "description": "Jabón con aloe vera. Dimensiones… Beneficios…",
+    "description": "Jabón de glicerina con aloe vera. Beneficios: Reduce la inflamación de la piel, combate el envejecimiento. Conviene a todo tipo de piel.",
     "talla": "",
-    "price": 0
+    "price": 3
   },
   {
     "reference": "JAB-ARR",
     "category": "jabon",
-    "description": "Jabón con arroz. Dimensiones… Beneficios…",
+    "description": "Jabón de glicerina con arroz. Beneficios: Hidrata y suaviza, unifica el tono de la piel, controla el acné, cicatriza. Ideal para pieles secas y maduras.",
     "talla": "",
-    "price": 0
+    "price": 3
+  },
+  {
+    "reference": "JAB-REM",
+    "category": "jabon",
+    "description": "Jabón de glicerina con remolacha. Beneficios: Mejora la elasticidad, reduce líneas de expresión, hidrata y nutre la piel. Ideal para pieles secas.",
+    "talla": "",
+    "price": 3
   }
 ]
