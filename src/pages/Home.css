@@ -6,9 +6,29 @@
   place-items: center;
   flex-grow: 1;
 
+  h1 {
+    font-family: cursive;
+    font-size: 4em;
+  }
+
+  h1,
+  h2 {
+    color: white;
+  }
+
+  a {
+    width: 200px;
+    margin: 5px 10px 5px 10px;
+  }
+
   #categories {
     img {
       background-color: white;
+    }
+
+    .text {
+      text-align: justify;
+      margin: 10px 20px 10px 20px;
     }
   }
 }

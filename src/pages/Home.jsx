@@ -7,27 +7,30 @@ import jabon from '../assets/img/jabon.png'
 function Home() {
   return (
     <>
-      <div id="home">
+      <div id="home" class="container-fluid" className="col-lg-8 mx-auto">
         <img src={mariaImg} alt="Virgen María" />
-        <h1>En casa con María</h1>
+        <h1 class="fs-sm-5">En casa con María</h1>
         <h2>Tienda casera de productos naturales</h2>
-        <Link to="/encasaconmaria/about">¿Quienes somos?</Link>
-        <Link to="/encasaconmaria/products">Productos</Link>
-        <Link to="/encasaconmaria/contact">Contáctanos</Link>
+        <div className="d-flex-lg">
+          <Link to="/encasaconmaria/about" className="btn btn-outline-primary btn-light">¿Quienes somos?</Link>
+          <Link to="/encasaconmaria/products" className="btn btn-outline-primary btn-light">Productos</Link>
+          <Link to="/encasaconmaria/contact" className="btn btn-outline-primary btn-light">Contáctanos</Link>
+        </div>
 
-        <div id="categories">
-          <h2>Nuestros rosarios</h2>
-          <div className="foto_text">
+        <div id="categories" className="d-flex flex-column align-items-center">
+          <div className="border rounded-4 my-3 p-2">
+            <h2>Nuestros rosarios</h2>
             <img src={rosario} alt="Foto rosario" width="300px" />
             <div className="text">Todos nuestros rosarios son fabricados a mano siguiendo métodos tradicionales en uso en la Iglesia católica.
               Trabajamos en un ambiente de ascesis, de oración y de paz.
             </div>
           </div>
 
-          <h2>Nuestros jabones</h2>
-          <div className="foto_text">
+          <div className="border rounded-4 my-3 p-2">
+            <h2>Nuestros jabones</h2>
+
             <img src={jabon} alt="Foto jabón" width="300px" />
-            <div className="text">Nuestros jabones son 100% naturales, fabricados con pura glicerina y ingredientes de origen natural recogidos en la naturaleza de Dios. Garantizados sin pesticidas ni colorantes. Los jabones son disponibles o en forma rotunda (65mm diametro) o en forma normal (90 x 55 mm).</div>
+            <div className="text">Nuestros jabones son 100% naturales, fabricados con pura glicerina y ingredientes de origen natural recogidos en la naturaleza de Dios. Garantizados sin pesticidas ni colorantes. Los jabones son disponibles o en forma redonda (65mm diametro) o en forma normal (90 x 55 mm).</div>
           </div>
         </div>
       </div>
