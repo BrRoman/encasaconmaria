@@ -37,20 +37,16 @@ function Menu(props) {
   return (
     <>
       <nav className="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-        <div className="container-fluid d-flex justify-content-between">
-          <div>
-            <img src={mariaImg} alt="Virgen María" width="30px" />
-            <Link className="navbar-brand" to={"/encasaconmaria/"}>En casa con María</Link>
-          </div>
-          <div>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav">
-                {pagesHtml}
-              </ul>
-            </div>
+        <div className="container-fluid">
+          <img src={mariaImg} alt="Virgen María" width="30px" />
+          <Link className="navbar-brand" to={"/encasaconmaria/"}>En casa con María</Link>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+              {pagesHtml}
+            </ul>
           </div>
         </div>
       </nav>
