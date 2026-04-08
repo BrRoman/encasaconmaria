@@ -27,7 +27,7 @@ function Home() {
           <h2>Nuestros jabones</h2>
           <div className="foto_text">
             <img src={jabon} alt="Foto jabón" width="300px" />
-            <div className="text">Nuestros jabones son 100% naturales, fabricados con pura glicerina y ingredientes de origen natural recogidos en la naturaleza de Dios. Garantizados sin pesticidas ni colorantes. Los jabones son disponibles o en forma rotunda (65mm diametro) o en forma normal (90 x 55 mm).</div>
+            <div className="text">Nuestros jabones son 100% naturales, fabricados con pura glicerina y ingredientes de origen natural recogidos en la naturaleza de Dios. Garantizados sin pesticidas ni colorantes. Los jabones son disponibles o en forma redonda (65mm diametro) o en forma normal (90 x 55 mm).</div>
           </div>
         </div>
       </div>
