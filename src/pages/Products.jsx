@@ -13,7 +13,7 @@ function Products() {
 
   const displayProducts = products.map((product) => {
     return (
-      <div key={product.reference}>
+      <div key={product.reference} className="product">
         <Product product={product}></Product>
       </div>
     )
@@ -24,7 +24,7 @@ function Products() {
       <Menu />
       <div id="products">
         <h2>Productos</h2>
-        <div id="body">{displayProducts}</div>
+        <div id="main">{displayProducts}</div>
       </div>
     </>
   )
