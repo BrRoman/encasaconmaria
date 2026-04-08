@@ -18,6 +18,13 @@
   .description {
     flex: 1;
     margin: 10px 0 0 0;
-    color: rgb(0, 0, 164);
+    color: #16171d;
+    font-size: 1.3em;
+    text-align: left;
+    width: 100%;
+
+    p {
+      margin: 0;
+    }
   }
 }
