@@ -9,9 +9,10 @@ function Contact() {
       <Menu />
       <div id="contact">
         <h1>Contáctanos</h1>
-        <div className="d-flex align-items-center bg-light text-primary border rounded my-3 p-3">
-          <FontAwesomeIcon icon="fa-solid fa-cog" spin size="3x" />
-          <h3 className="fw-bold ms-2">Pagina en construcción…</h3>
+        <div className="d-flex flex-column align-items-center border rounded my-3 p-3">
+          <h3 className="fw-bold ms-2">Esta pagina aún está en construcción…</h3>
+          <span className="text-info"><FontAwesomeIcon icon="fa-solid fa-cog" spin size="3x" /></span>
+          <h3 className="fw-bold ms-2">Disculpen las molestias.</h3>
         </div>
         <img src={constructionImg} alt="Obra" width="400px" />
       </div>
