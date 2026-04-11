@@ -2,6 +2,12 @@
   background-color: rgb(240, 240, 240);
   color: rgb(67, 67, 67);
 
+  #mensaje {
+    p {
+      margin: 0;
+    }
+  }
+
   .form-group {
     display: flex;
     flex-direction: column;

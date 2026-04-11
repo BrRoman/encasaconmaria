@@ -1,4 +1,5 @@
-import { React, useState } from "react";
+import { useState } from "react";
+import { useParams } from "react-router-dom";
 import './Contact.css'
 import Menu from '../components/Menu'
 
@@ -7,15 +8,17 @@ function Contact() {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  let params = useParams();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(
-      firstName,
-      lastName,
-      email,
-      message
-    );
+  const displayMessage = () => {
+    return (
+      params.status === "success" &&
+      <div id="mensaje" className="bg-success text-light border rounded w-lg-50 fs-6 p-3 m-3">
+        <p>Su mensaje fue enviado con éxito.</p>
+        <p>¡Gracias!</p>
+        <p>Nos pondremos en contacto con Usted lo antes posible.</p>
+      </div>
+    )
   };
 
   const handleReset = () => {
@@ -31,6 +34,8 @@ function Contact() {
       <Menu />
       <div id="contact" className="d-flex flex-column align-items-center">
         <h1>Contáctanos</h1>
+
+        {displayMessage()}
 
         <form method="post" action="https://forms.un-static.com/forms/539fb9910b700b58d2a033a92ac3723d73fe553e" className="col-10 col-lg-4">
           {/* Nombre */}

@@ -12,6 +12,7 @@ function App() {
       <Route path="/encasaconmaria/about" element={<About />} />
       <Route path="/encasaconmaria/products" element={<Products />} />
       <Route path="/encasaconmaria/contact" element={<Contact />} />
+      <Route path="/encasaconmaria/contact/:status" element={<Contact />} />
     </Routes>
   )
 }
