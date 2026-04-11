@@ -32,7 +32,7 @@ function Contact() {
       <div id="contact" className="d-flex flex-column align-items-center">
         <h1>Contáctanos</h1>
 
-        <form method="post" action="$$$https://forms.un-static.com/forms/YOUR_ENDPOINT_REFERENCE" className="col-10 col-lg-4">
+        <form method="post" action="https://forms.un-static.com/forms/539fb9910b700b58d2a033a92ac3723d73fe553e" className="col-10 col-lg-4">
           {/* Nombre */}
           <div className="form-group">
             <label for="firstname" className="form-label">Nombre:</label>
@@ -120,6 +120,9 @@ function Contact() {
             </button>
           </div>
         </form>
+        <div align="center">
+          <p><small>(Powered by <a rel="nofollow" href="Un-static Forms">Un-static Forms</a>)</small></p>
+        </div>
       </div>
     </>
   )
