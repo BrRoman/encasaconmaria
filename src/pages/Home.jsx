@@ -14,19 +14,19 @@ function Home() {
         <h2>Tienda casera de productos naturales</h2>
         <div className="d-flex-lg">
           <Link to="/encasaconmaria/about" className="btn btn-outline-primary btn-light">
-            <div className="d-flex justify-content-center align-items-center">
+            <div className="d-flex justify-content-start align-items-center ps-4">
               <FontAwesomeIcon icon="fa-solid fa-person-circle-question" size="2x" />
               <span className="fw-bold ms-2">¿Quienes somos?</span>
             </div>
           </Link>
           <Link to="/encasaconmaria/products" className="btn btn-outline-primary btn-light">
-            <div className="d-flex justify-content-center align-items-center">
+            <div className="d-flex justify-content-start align-items-center ps-4">
               <FontAwesomeIcon icon="fa-solid fa-basket-shopping" size="2x" />
               <span className="fw-bold ms-2">Productos</span>
             </div>
           </Link>
           <Link to="/encasaconmaria/contact" className="btn btn-outline-primary btn-light">
-            <div className="d-flex justify-content-center align-items-center">
+            <div className="d-flex justify-content-start align-items-center ps-4">
               <FontAwesomeIcon icon="fa-solid fa-pen-nib" size="2x" />
               <span className="fw-bold ms-2">Contáctanos</span>
             </div>
