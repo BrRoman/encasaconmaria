@@ -1,20 +1,127 @@
+import { React, useState } from "react";
 import './Contact.css'
 import Menu from '../components/Menu'
-import constructionImg from '../assets/img/construction.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Contact() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(
+      firstName,
+      lastName,
+      email,
+      message
+    );
+  };
+  
+  const handleReset = () => {
+    // Reset all state variables here
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setMessage("");
+  };
+
   return (
     <>
       <Menu />
-      <div id="contact">
+      <div id="contact" className="d-flex flex-column align-items-center">
         <h1>Contáctanos</h1>
-        <div className="d-flex flex-column align-items-center border rounded my-3 p-3">
-          <h3 className="fw-bold ms-2">Esta pagina aún está en construcción…</h3>
-          <span className="text-info"><FontAwesomeIcon icon="fa-solid fa-cog" spin size="3x" /></span>
-          <h3 className="fw-bold ms-2">Disculpen las molestias.</h3>
-        </div>
-        <img src={constructionImg} alt="Obra" width="400px" />
+
+        <form method="post" action="$$$https://forms.un-static.com/forms/YOUR_ENDPOINT_REFERENCE">
+          <div className="d-flex flex-column w-100">
+            {/* Nombre */}
+            <div className="form-group">
+              <label for="firstname" className="form-label">Nombre:</label>
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                value={firstName}
+                onChange={(e) =>
+                  setFirstName(e.target.value)
+                }
+                required
+                className="form-control"
+              />
+            </div>
+
+            {/* Apellidos */}
+            <div className="form-group">
+              <label for="lastname" className="form-label">Apellidos:</label>
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                value={lastName}
+                onChange={(e) =>
+                  setLastName(e.target.value)
+                }
+                required
+                className="form-control"
+              />
+            </div>
+
+            {/* Email */}
+            <div className="form-group">
+              <label for="email" className="form-label">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                value={email}
+                onChange={(e) =>
+                  setEmail(e.target.value)
+                }
+                required
+                className="form-control"
+              />
+            </div>
+
+            {/* Mensaje */}
+            <div className="form-group">
+              <label for="mensaje" className="form-label">Mensaje:</label>
+              <textarea
+                name="message"
+                id="message"
+                value={message}
+                onChange={(e) =>
+                  setMessage(e.target.value)
+                }
+                placeholder="Escribe aquí tu mensaje, tu pregunta o tu pedido."
+                required
+                className="form-control"
+                rows="10"
+              />
+            </div>
+
+            <div className="d-flex justify-content-center mt-2 mb-5">
+              {/* Cancel */}
+              <button
+                type="reset"
+                value="reset"
+                onClick={() => handleReset()}
+                className="btn btn-secondary mx-2"
+              >
+                Cancelar
+              </button>
+
+              {/* Submit */}
+              <button
+                type="submit"
+                value="Submit"
+                onClick={(e) => handleSubmit(e)}
+                className="btn btn-primary mx-2"
+              >
+                Enviar
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </>
   )
