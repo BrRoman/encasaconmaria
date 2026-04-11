@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import mariaImg from '../assets/img/maria.png'
 import './Menu.css'
 
@@ -26,9 +26,9 @@ const pages = [
 const pagesHtml = pages.map(page => {
   return (
     <li key={page.id} className="nav-item">
-      <Link className="nav-link active" aria-current="page" to={"/encasaconmaria/" + page.slug}>
+      <NavLink className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} aria-current="page" to={"/encasaconmaria/" + page.slug}>
         {page.title}
-      </Link>
+      </NavLink>
     </li>
   )
 })
