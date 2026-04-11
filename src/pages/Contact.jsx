@@ -22,7 +22,6 @@ function Contact() {
   };
 
   const handleReset = () => {
-    // Reset all state variables here
     setFirstName("");
     setLastName("");
     setEmail("");
@@ -84,6 +83,7 @@ function Contact() {
               required
               className="form-control"
             />
+            <small>Nunca compartiremos su correo electrónico con nadie más.</small>
           </div>
 
           {/* Mensaje */}
@@ -118,15 +118,14 @@ function Contact() {
             <button
               type="submit"
               value="Submit"
-              onClick={(e) => handleSubmit(e)}
               className="btn btn-primary mx-2"
             >
-              Enviar
+              Enviar (con Captcha)
             </button>
           </div>
         </form>
         <div align="center">
-          <p><small>(Powered by <a rel="nofollow" href="Un-static Forms">Un-static Forms</a>)</small></p>
+          <p><small>(Powered by <a rel="nofollow" href="https://un-static.com/">Un-static Forms</a>)</small></p>
         </div>
       </div>
     </>
