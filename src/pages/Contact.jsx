@@ -40,7 +40,7 @@ function Contact() {
         <form method="post" action="https://forms.un-static.com/forms/539fb9910b700b58d2a033a92ac3723d73fe553e" className="col-10 col-lg-4">
           {/* Nombre */}
           <div className="form-group">
-            <label for="firstname" className="form-label">Nombre:</label>
+            <label htmlFor="firstname" className="form-label">Nombre:</label>
             <input
               type="text"
               name="firstname"
@@ -56,7 +56,7 @@ function Contact() {
 
           {/* Apellidos */}
           <div className="form-group">
-            <label for="lastname" className="form-label">Apellidos:</label>
+            <label htmlFor="lastname" className="form-label">Apellidos:</label>
             <input
               type="text"
               name="lastname"
@@ -72,7 +72,7 @@ function Contact() {
 
           {/* Email */}
           <div className="form-group">
-            <label for="email" className="form-label">Email:</label>
+            <label htmlFor="email" className="form-label">Email:</label>
             <input
               type="email"
               name="email"
@@ -88,7 +88,7 @@ function Contact() {
 
           {/* Mensaje */}
           <div className="form-group">
-            <label for="mensaje" className="form-label">Mensaje:</label>
+            <label htmlFor="mensaje" className="form-label">Mensaje:</label>
             <textarea
               name="message"
               id="message"
