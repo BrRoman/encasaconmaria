@@ -1,12 +1,20 @@
 nav {
-  img {
-    margin: 0 10px 0 0;
-    vertical-align: text-bottom;
-  }
-
   .navbar-brand {
     font-family: cursive;
-    font-size: 2em;
-    alignment-baseline: center;
+  }
+
+  .nav-item {
+    .active {
+      color: rgb(200, 200, 200) !important;
+      pointer-events: none;
+    }
+
+    :not(.active) {
+      color: white;
+
+      :hover {
+        color: grey;
+      }
+    }
   }
 }

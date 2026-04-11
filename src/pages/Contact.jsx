@@ -1,15 +1,132 @@
+import { useState } from "react";
+import { useParams } from "react-router-dom";
 import './Contact.css'
 import Menu from '../components/Menu'
-import constructionImg from '../assets/img/construction.png'
 
 function Contact() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  let params = useParams();
+
+  const displayMessage = () => {
+    return (
+      params.status === "success" &&
+      <div id="mensaje" className="bg-success text-light border rounded w-lg-50 fs-6 p-3 m-3">
+        <p>Su mensaje fue enviado con éxito.</p>
+        <p>¡Gracias!</p>
+        <p>Nos pondremos en contacto con Usted lo antes posible.</p>
+      </div>
+    )
+  };
+
+  const handleReset = () => {
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setMessage("");
+  };
+
   return (
     <>
       <Menu />
-      <div id="contact">
+      <div id="contact" className="d-flex flex-column align-items-center">
         <h1>Contáctanos</h1>
-        <h3>Pagina en construcción…</h3>
-        <img src={constructionImg} alt="Obra" width="400px" />
+
+        {displayMessage()}
+
+        <form method="post" action="https://forms.un-static.com/forms/539fb9910b700b58d2a033a92ac3723d73fe553e" className="col-10 col-lg-4">
+          {/* Nombre */}
+          <div className="form-group">
+            <label htmlFor="firstname" className="form-label">Nombre:</label>
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              value={firstName}
+              onChange={(e) =>
+                setFirstName(e.target.value)
+              }
+              required
+              className="form-control"
+            />
+          </div>
+
+          {/* Apellidos */}
+          <div className="form-group">
+            <label htmlFor="lastname" className="form-label">Apellidos:</label>
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              value={lastName}
+              onChange={(e) =>
+                setLastName(e.target.value)
+              }
+              required
+              className="form-control"
+            />
+          </div>
+
+          {/* Email */}
+          <div className="form-group">
+            <label htmlFor="email" className="form-label">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              value={email}
+              onChange={(e) =>
+                setEmail(e.target.value)
+              }
+              required
+              className="form-control"
+            />
+            <small>Nunca compartiremos su correo electrónico con nadie más.</small>
+          </div>
+
+          {/* Mensaje */}
+          <div className="form-group">
+            <label htmlFor="mensaje" className="form-label">Mensaje:</label>
+            <textarea
+              name="message"
+              id="message"
+              value={message}
+              onChange={(e) =>
+                setMessage(e.target.value)
+              }
+              placeholder="Escribe aquí tu mensaje, tu pregunta o tu pedido."
+              required
+              className="form-control"
+              rows="10"
+            />
+          </div>
+
+          <div className="d-flex justify-content-center mt-2 mb-5">
+            {/* Cancel */}
+            <button
+              type="reset"
+              value="reset"
+              onClick={() => handleReset()}
+              className="btn btn-secondary mx-2"
+            >
+              Cancelar
+            </button>
+
+            {/* Submit */}
+            <button
+              type="submit"
+              value="Submit"
+              className="btn btn-primary mx-2"
+            >
+              Enviar (con Captcha)
+            </button>
+          </div>
+        </form>
+        <div align="center">
+          <p><small>(Powered by <a rel="nofollow" href="https://un-static.com/">Un-static Forms</a>)</small></p>
+        </div>
       </div>
     </>
   )

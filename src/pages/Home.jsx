@@ -3,18 +3,34 @@ import './Home.css'
 import mariaImg from '../assets/img/maria.png'
 import rosario from '../assets/img/rosario.png'
 import jabon from '../assets/img/jabon.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Home() {
   return (
     <>
-      <div id="home" class="container-fluid" className="col-lg-8 mx-auto">
-        <img src={mariaImg} alt="Virgen María" />
-        <h1 class="fs-sm-5">En casa con María</h1>
+      <div id="home" className="container-fluid col-lg-8 mx-auto">
+        <img src={mariaImg} alt="Virgen María" style={{ marginTop: "50px" }} />
+        <h1 className="fs-sm-5">En casa con María</h1>
         <h2>Tienda casera de productos naturales</h2>
         <div className="d-flex-lg">
-          <Link to="/encasaconmaria/about" className="btn btn-outline-primary btn-light">¿Quienes somos?</Link>
-          <Link to="/encasaconmaria/products" className="btn btn-outline-primary btn-light">Productos</Link>
-          <Link to="/encasaconmaria/contact" className="btn btn-outline-primary btn-light">Contáctanos</Link>
+          <Link to="/encasaconmaria/about" className="btn btn-outline-primary btn-light">
+            <div className="d-flex justify-content-start align-items-center ps-4">
+              <FontAwesomeIcon icon="fa-solid fa-person-circle-question" size="2x" />
+              <span className="fw-bold ms-2">¿Quienes somos?</span>
+            </div>
+          </Link>
+          <Link to="/encasaconmaria/products" className="btn btn-outline-primary btn-light">
+            <div className="d-flex justify-content-start align-items-center ps-4">
+              <FontAwesomeIcon icon="fa-solid fa-basket-shopping" size="2x" />
+              <span className="fw-bold ms-2">Productos</span>
+            </div>
+          </Link>
+          <Link to="/encasaconmaria/contact" className="btn btn-outline-primary btn-light">
+            <div className="d-flex justify-content-start align-items-center ps-4">
+              <FontAwesomeIcon icon="fa-solid fa-pen-nib" size="2x" />
+              <span className="fw-bold ms-2">Contáctanos</span>
+            </div>
+          </Link>
         </div>
 
         <div id="categories" className="d-flex flex-column align-items-center">
