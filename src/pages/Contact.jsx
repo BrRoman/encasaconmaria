@@ -17,7 +17,7 @@ function Contact() {
       message
     );
   };
-  
+
   const handleReset = () => {
     // Reset all state variables here
     setFirstName("");
