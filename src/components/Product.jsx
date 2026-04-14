@@ -5,12 +5,21 @@ function Product(props) {
 
   return (
     <>
-      <div className="image"><img src={"img/" + product.reference + ".png"} alt="Missing file" /></div>
-      <div className="description">
-        <p>Referencia {product.reference}</p>
-        <p>{product.description}</p>
-        <p>Dimensiones: {product.talla}</p>
-        <p>Precio: {product.price.toString()} €</p>
+      <div className="row">
+        <img className="card-img-top" src={"img/" + product.reference + ".png"} alt="Missing file" />
+      </div>
+
+      <div className="row">
+        <div className="card-body">
+          <h5 className="card-title text-info">Referencia {product.reference}</h5>
+          <p className="card-text">
+            {product.description}<br />
+            Dimensiones: {product.talla}<br />
+          </p>
+          <p className="card-text bg-warning fw-bold">
+            Precio: {product.price.toString()} €
+          </p>
+        </div>
       </div>
     </>
   )

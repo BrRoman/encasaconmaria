@@ -13,8 +13,10 @@ function Products() {
 
   const displayProducts = products.map((product) => {
     return (
-      <div key={product.reference} className="product">
-        <Product product={product}></Product>
+      <div className="col-lg-3">
+        <div key={product.reference} className="card mx-auto my-3 my-lg-0">
+          <Product product={product}></Product>
+        </div>
       </div>
     )
   })
@@ -23,8 +25,12 @@ function Products() {
     <>
       <Menu />
       <div id="products">
-        <h2>Productos</h2>
-        <div id="main">{displayProducts}</div>
+        <h2 className="py-3">Productos</h2>
+        <div className="container">
+          <div className="row h-50">
+            {displayProducts}
+          </div>
+        </div>
       </div>
     </>
   )
