@@ -67,6 +67,12 @@ function Home() {
                 Los jabones son disponibles o en forma redonda (65mm diametro) o en forma normal (90 x 55 mm).</div>
             </div>
           </div>
+
+          <div className="col-12 col-lg-4">
+            <Link to="/encasaconmaria/products">
+              <button className="btn btn-light text-primary mb-5">Ver los productos</button>
+            </Link>
+          </div>
         </div>
       </div>
     </>
