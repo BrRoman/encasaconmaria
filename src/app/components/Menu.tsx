@@ -27,7 +27,7 @@ const pages = [
   {
     id: 4,
     slug: "contact",
-    title: "Contáctanos",
+    title: "Contáctenos",
   },
 ];
 
@@ -52,7 +52,10 @@ export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div id="menu" className="md:flex md:items-center md:justify-between">
+    <div
+      id="menu"
+      className="flex-column md:flex md:items-center md:justify-between"
+    >
       <div className="flex justify-between items-center py-4">
         <Link href={"/"}>
           <div className="flex items-center">
@@ -92,9 +95,10 @@ export default function Menu() {
       </div>
 
       <nav className={isOpen ? "block" : "hidden md:block"}>
-        <ul className="flex-column md:flex md:items-center md:space-x-4 text-left ml-4 md:mr-4">
+        <ul className="flex-column ml-4 mb-4 md:flex md:items-center md:space-x-4 md:mr-4">
           {pagesHtml(pathname)}
         </ul>
+        <hr className="my-8 border-gray-300" />
       </nav>
     </div>
   );
