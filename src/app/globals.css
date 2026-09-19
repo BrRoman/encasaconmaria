@@ -1,26 +1,143 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #002b6f;
+  --foreground: #e5e5e5;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-roboto);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #002b6f;
     --foreground: #ededed;
   }
 }
 
+@layer base {
+  h1 {
+    @apply text-5xl my-8;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h1,
+  h2 {
+    font-family: var(--font-roboto);
+    @apply text-center;
+  }
+
+  .btn {
+    @apply py-2 px-4 my-8 rounded;
+    @apply my-8 mx-auto font-bold block;
+  }
+
+  .btn-white {
+    @apply bg-white text-blue-900;
+  }
+
+  .btn-white:hover {
+    @apply text-blue-700;
+  }
+}
+
 body {
-  background: var(--background);
+  background: linear-gradient(var(--background), #4d6b9a);
+  background-attachment: fixed;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-roboto);
+}
+
+.site-title {
+  font-family: var(--font-parisienne);
+}
+
+#menu {
+  .active {
+    color: rgb(182, 182, 182) !important;
+    pointer-events: none;
+  }
+}
+
+#home {
+  #menu {
+    a {
+      color: white;
+    }
+
+    a:hover {
+      color: rgb(213, 213, 213);
+    }
+
+    span {
+      margin: 0 0 0 5px;
+    }
+  }
+
+  #categories {
+    img {
+      transition: 0.3s;
+      background-color: white;
+    }
+
+    @media (min-width: 768px) {
+      img:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    .text {
+      text-align: justify;
+      margin: 0 20px;
+    }
+
+    @media (min-width: 768px) {
+      .text {
+        margin: 20px;
+      }
+    }
+  }
+}
+
+#contact {
+  background-color: rgb(255, 255, 255);
+  color: rgb(67, 67, 67);
+
+  h1 {
+    color: var(--blue-light);
+    font-size: 2rem;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0 0 10px 0;
+    width: 100%;
+
+    input,
+    textarea {
+      border: 1px solid rgb(204, 204, 204);
+      border-radius: 5px;
+      background-color: lightgray;
+      padding: 5px 10px;
+      width: 100%;
+    }
+  }
+
+  button {
+    font-size: 0.9rem;
+    width: 200px;
+    margin: 0 5px;
+  }
 }
