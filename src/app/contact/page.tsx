@@ -36,7 +36,7 @@ export default function Contact() {
 
       <div
         id="contact"
-        className="w-full md:w-2/3 lg:w-1/2 mx-auto md:rounded-md mb-8"
+        className="w-full md:w-2/3 lg:w-1/2 mx-auto md:rounded-md"
       >
         <h1>¡Contáctenos!</h1>
 
@@ -126,7 +126,7 @@ export default function Contact() {
         </form>
 
         <div className="mt-8 mb-2">
-          <small>
+          <small className="text-gray-500 text-center w-full block">
             Powered by{" "}
             <a
               rel="nofollow"

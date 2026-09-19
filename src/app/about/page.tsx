@@ -10,12 +10,11 @@ export default function About() {
       <div id="about">
         <h1>¿Quiénes somos?</h1>
 
-        <div className="flex-column gap-8 my-8 md:w-2/3 md:mx-auto md:flex-row md:flex">
+        <div className="flex-column gap-8 my-8 md:w-2/3 md:mx-auto">
           <Image
             src={imgNicoLady}
             alt="Foto"
             width={450}
-            height={450}
             className="w-full md:max-w-64 md:rounded-md md:mx-auto"
           />
 
@@ -30,7 +29,7 @@ export default function About() {
             Nuestra misión es proporcionar productos que ayuden a nuestros
             clientes a vivir una vida más saludable y equilibrada, mientras
             fomentamos valores cristianos y promovemos la conexión con la fe.
-          </p>
+          </div>
         </div>
       </div>
     </>
