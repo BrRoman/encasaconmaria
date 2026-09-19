@@ -50,7 +50,7 @@ export default function Home() {
         <Link href="/contact">
           <div>
             <FontAwesomeIcon icon={faPenNib} size="2x" />
-            <span>Contáctanos</span>
+            <span>Contáctenos</span>
           </div>
         </Link>
       </div>
