@@ -58,6 +58,10 @@ body {
   font-family: var(--font-parisienne);
 }
 
+.text {
+  text-align: justify;
+}
+
 #menu {
   .active {
     color: rgb(182, 182, 182) !important;
@@ -90,11 +94,6 @@ body {
       img:hover {
         transform: scale(1.05);
       }
-    }
-
-    .text {
-      text-align: justify;
-      margin: 0 20px;
     }
 
     @media (min-width: 768px) {
