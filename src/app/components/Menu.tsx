@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
@@ -30,16 +31,24 @@ const pages = [
   },
 ];
 
-const pagesHtml = pages.map((page) => {
-  return (
-    <li key={page.id} className="text-gray-200 hover:text-white">
-      <Link className="nav-link" href={"/" + page.slug}>
-        {page.title}
-      </Link>
-    </li>
-  );
-});
+const pagesHtml = (pathname: string) =>
+  pages.map((page) => {
+    return (
+      <li key={page.id} className="text-gray-200 text-lg hover:text-white">
+        <Link
+          className={
+            pathname === "/" + page.slug ? "nav-link active" : "nav-link"
+          }
+          href={"/" + page.slug}
+        >
+          {page.title}
+        </Link>
+      </li>
+    );
+  });
+
 export default function Menu() {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -84,7 +93,7 @@ export default function Menu() {
 
       <nav className={isOpen ? "block" : "hidden md:block"}>
         <ul className="flex-column md:flex md:items-center md:space-x-4 text-left ml-4 md:mr-4">
-          {pagesHtml}
+          {pagesHtml(pathname)}
         </ul>
       </nav>
     </div>
