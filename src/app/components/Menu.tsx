@@ -98,7 +98,7 @@ export default function Menu() {
         <ul className="flex-column ml-4 mb-4 md:flex md:items-center md:space-x-4 md:mr-4">
           {pagesHtml(pathname)}
         </ul>
-        <hr className="my-8 border-gray-300" />
+        <hr className="my-8 border-gray-300 md:hidden" />
       </nav>
     </div>
   );
