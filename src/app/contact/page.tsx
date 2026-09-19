@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import Menu from "../components/Menu";
 
 export default function Contact() {
@@ -9,14 +9,13 @@ export default function Contact() {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  let params = useParams<{ status: string }>();
+  let params = useSearchParams();
 
   const displayMessage = () => {
     return (
-      params.status === "success" && (
-        <div id="mensaje">
-          <p>Su mensaje fue enviado con éxito.</p>
-          <p>¡Gracias!</p>
+      params.get("status") === "success" && (
+        <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 text-center rounded relative m-4">
+          <p>¡Enhorabuena! Su mensaje fue enviado con éxito.</p>
           <p>Nos pondremos en contacto con Usted lo antes posible.</p>
         </div>
       )
@@ -38,9 +37,9 @@ export default function Contact() {
         id="contact"
         className="w-full md:w-2/3 lg:w-1/2 mx-auto md:rounded-md"
       >
-        <h1>¡Contáctenos!</h1>
-
         {displayMessage()}
+
+        <h1>¡Contáctenos!</h1>
 
         <form
           method="post"
@@ -120,7 +119,7 @@ export default function Contact() {
               value="Submit"
               className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 border border-blue-600 rounded"
             >
-              Enviar (con Captcha)
+              Enviar
             </button>
           </div>
         </form>
