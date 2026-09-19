@@ -1,18 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import { config, library } from "@fortawesome/fontawesome-svg-core";
+import { Roboto, Parisienne } from "next/font/google";
+import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const roboto = Roboto({
+  weight: ["400", "600", "700"],
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-roboto",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const parisienne = Parisienne({
+  weight: ["400"],
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-parisienne",
 });
 
 export const metadata: Metadata = {
@@ -24,7 +28,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="es"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${roboto.variable} ${parisienne.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
