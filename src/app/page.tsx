@@ -69,7 +69,7 @@ export default function Home() {
 
           <div>
             <h2>Nuestros rosarios</h2>
-            <div className="text">
+            <div className="text m-4 md:font-xl">
               Todos nuestros rosarios son fabricados a mano siguiendo métodos
               tradicionales en uso en la Iglesia católica.
               <br />
@@ -91,7 +91,7 @@ export default function Home() {
 
           <div>
             <h2>Nuestros jabones</h2>
-            <div className="text md:font-xl">
+            <div className="text m-4 md:font-xl">
               Nuestros jabones son 100% naturales, fabricados con pura glicerina
               y ingredientes de origen natural recogidos en la naturaleza de
               Dios. Garantizados sin pesticidas ni colorantes.

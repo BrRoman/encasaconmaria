@@ -19,14 +19,14 @@ export default function About() {
             className="w-full md:max-w-64 md:rounded-md md:mx-auto"
           />
 
-          <div className="text">
+          <div className="text text-lg m-4">
             Somos una pareja joven, católica, amantes de la naturaleza. Buscamos
             hacer las cosas con amor y vivir honestamente del trabajo de
             nuestras manos, multiplicando la creatividad que Dios ha puesto en
             nosotros. Vivimos en Totana (Murcia), España.
           </div>
 
-          <p>
+          <div className="text text-lg m-4">
             Nuestra misión es proporcionar productos que ayuden a nuestros
             clientes a vivir una vida más saludable y equilibrada, mientras
             fomentamos valores cristianos y promovemos la conexión con la fe.
