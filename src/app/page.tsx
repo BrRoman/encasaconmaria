@@ -21,7 +21,7 @@ export default function Home() {
         className="mx-auto my-8"
       />
       <h1 className="site-title">En casa con María</h1>
-      <h2>Tienda cristiana de productos naturales</h2>
+      <h2 className="mx-4">Tienda cristiana de productos naturales</h2>
 
       <hr className="my-8 border-gray-300" />
 
