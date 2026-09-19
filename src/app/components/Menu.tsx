@@ -67,7 +67,7 @@ export default function Menu() {
               className="mx-4"
             />
 
-            <p className="m-0 text-2xl">En casa con María</p>
+            <p className="site-title m-0 text-4xl">En casa con María</p>
           </div>
         </Link>
 
