@@ -1,26 +1,14 @@
 "use client";
 
-import { useState } from "react";
-import { useSearchParams } from "next/navigation";
+import { useState, Suspense } from "react";
 import Menu from "../components/Menu";
+import Message from "./message";
 
 export default function Contact() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  let params = useSearchParams();
-
-  const displayMessage = () => {
-    return (
-      params.get("status") === "success" && (
-        <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 text-center rounded relative m-4">
-          <p>¡Enhorabuena! Su mensaje fue enviado con éxito.</p>
-          <p>Nos pondremos en contacto con Usted lo antes posible.</p>
-        </div>
-      )
-    );
-  };
 
   const handleReset = () => {
     setFirstName("");
@@ -37,7 +25,9 @@ export default function Contact() {
         id="contact"
         className="w-full md:w-2/3 lg:w-1/2 mx-auto md:rounded-md"
       >
-        {displayMessage()}
+        <Suspense>
+          <Message />
+        </Suspense>
 
         <h1>¡Contáctenos!</h1>
 
