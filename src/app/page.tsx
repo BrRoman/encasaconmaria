@@ -23,9 +23,11 @@ export default function Home() {
       <h1>En casa con María</h1>
       <h2>Tienda cristiana de productos naturales</h2>
 
+      <hr className="my-8 border-gray-300" />
+
       <div
         id="menu"
-        className="flex flex-col items-start gap-8 md:flex-row md:flex-wrap md:justify-center my-5"
+        className="flex flex-col items-start gap-8 ml-4 my-5 md:flex-row md:flex-wrap md:justify-center md:mx-0"
       >
         <Link href="/about">
           <div>
@@ -53,12 +55,16 @@ export default function Home() {
         </Link>
       </div>
 
-      <div id="categories">
+      <hr className="my-8 border-gray-300" />
+
+      <div id="categories" className="flex flex-col my-8 md:w-2/3 md:mx-auto">
         <div className="flex flex-col md:flex-row gap-8 my-8">
           <Image
             src={imgRosario}
             alt="Foto rosario"
-            className="w-full md:rounded-md img-fluid"
+            width={300}
+            height={300}
+            className="w-full m-0 md:max-w-64 md:rounded-md"
           />
 
           <div>
@@ -72,16 +78,20 @@ export default function Home() {
           </div>
         </div>
 
+        <hr className="my-4 border-gray-500" />
+
         <div className="flex flex-col md:flex-row gap-8 my-8">
           <Image
             src={imgJabon}
             alt="Foto jabón"
-            className="w-full md:rounded-md img-fluid"
+            width={300}
+            height={300}
+            className="w-full m-0 md:max-w-64 md:rounded-md"
           />
 
           <div>
             <h2>Nuestros jabones</h2>
-            <div className="text">
+            <div className="text md:font-xl">
               Nuestros jabones son 100% naturales, fabricados con pura glicerina
               y ingredientes de origen natural recogidos en la naturaleza de
               Dios. Garantizados sin pesticidas ni colorantes.
@@ -91,6 +101,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <hr className="my-4 border-gray-500" />
 
         <button className="btn btn-white">
           <Link href="/products">Ver los productos</Link>
