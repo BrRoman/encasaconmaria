@@ -1,7 +1,13 @@
+import Menu from "../components/Menu";
+
 export default function Contact() {
   return (
-    <div id="contact">
-      <h1>Contáctanos!</h1>
-    </div>
+    <>
+      <Menu />
+
+      <div id="contact">
+        <h1>Contáctenos!</h1>
+      </div>
+    </>
   );
 }

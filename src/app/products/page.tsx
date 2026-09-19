@@ -1,7 +1,13 @@
+import Menu from "../components/Menu";
+
 export default function Products() {
   return (
-    <div id="products">
-      <h1>Nuestros productos</h1>
-    </div>
+    <>
+      <Menu />
+
+      <div id="products">
+        <h1>Nuestros productos</h1>
+      </div>
+    </>
   );
 }
