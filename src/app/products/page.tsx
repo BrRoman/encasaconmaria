@@ -36,7 +36,7 @@ export default function Products() {
     return (
       <div className="flex flex-col items-center bg-white text-gray-700 p-4 rounded shadow">
         <img
-          src={`https://nico3113.pythonanywhere.com/static/img/${product.name}.png`}
+          src={`https://nico3113.pythonanywhere.com/static/api/img/${product.name}.png`}
           alt="Missing file"
           className="md:w-3/4"
         />
