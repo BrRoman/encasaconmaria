@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Menu from "../components/Menu";
 
 export default function Products() {
@@ -35,10 +36,12 @@ export default function Products() {
   const Product = ({ product }: { product: any }) => {
     return (
       <div className="flex flex-col items-center bg-white text-gray-700 p-4 rounded shadow">
-        <img
-          src={`https://nico3113.pythonanywhere.com/static/api/img/${product.name}.png`}
+        <Image
+          src={`/visuals/${product.name}.png`}
           alt="Missing file"
           className="md:w-3/4"
+          width={300}
+          height={300}
         />
 
         <h5 className="my-3">
