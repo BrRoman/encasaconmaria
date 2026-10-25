@@ -84,6 +84,8 @@ export default function Products() {
               <option value="rosario">Rosarios</option>
               <option value="decenario">Decenarios</option>
               <option value="jabon">Jabones</option>
+              <option value="vela">Velas</option>
+              <option value="aceite">Aceite</option>
             </select>
           </div>
           <div id="products" className="grid grid-cols-1 md:grid-cols-4 gap-4">
