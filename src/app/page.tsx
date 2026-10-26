@@ -3,6 +3,7 @@ import Image from "next/image";
 import imgMaria from "../static/img/maria.png";
 import imgRosario from "../static/img/rosario.png";
 import imgJabon from "../static/img/jabon.png";
+import imgVelas from "../static/img/velas.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPersonCircleQuestion,
@@ -58,6 +59,26 @@ export default function Home() {
       <hr className="my-8 border-gray-300" />
 
       <div id="categories" className="flex flex-col my-8 md:w-2/3 md:mx-auto">
+        <div className="flex flex-col gap-8 my-8">
+          <Image
+            src={imgVelas}
+            alt="Foto velas"
+            width={600}
+            height={600}
+            className="mx-auto m-0 md:rounded-md"
+          />
+
+          <div>
+            <h2>🎄🎇✨🎁🕯️✴️ ¡NUEVO! Velas de cera ✴️🕯️🎁✨🎇🎄</h2>
+            <div className="text m-4 md:font-xl">
+              Proponemos 3 modelos de velas que representan la Sagrada Familia.
+              Un regalo ideal para preparar la Navidad!
+            </div>
+          </div>
+        </div>
+
+        <hr className="my-4 border-gray-500" />
+
         <div className="flex flex-col md:flex-row gap-8 my-8">
           <Image
             src={imgRosario}
